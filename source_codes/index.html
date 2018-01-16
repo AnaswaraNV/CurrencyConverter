@@ -1,0 +1,28 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./apiconnection.js."></script>
+    <body>
+        <table>
+            <tr>
+                <td> <h2>Currency Converter</h2>
+                     <h4>Type in amount and select currency: </h4>
+                    <input type="text" id="fromCurrency" placeholder="0.00">
+                    </input>
+                    <select id= "fromFormat" onchange="scheduleA.call(this, event)">
+                        <option value="USD">US Dollar</option>
+                        <option value="CAD">Canadian Dollar</option>
+                        <option value="INR">Indian Rupee</option>
+                    </select>
+                    <h4>Converted Amount: </h4>
+                    <input type="text" id="toCurrency" placeholder="0.00">
+                    </input>
+                    <select id= "toFormat" onchange="scheduleA.call(this, event)">
+                        <option value="USD">US Dollar</option>
+                        <option value="CAD">Canadian Dollar</option>
+                        <option value="INR">Indian Rupee</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
